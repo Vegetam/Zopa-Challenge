@@ -36,8 +36,10 @@ public class Application {
         sb.append(String.format("Annual Interest Rate: %.1f%%\n", quote.getMonthlyRate() * 100));
         sb.append(String.format("Monthly repayment: £%.2f\n", quote.getMonthlyRepayment()));
         sb.append(String.format("Total repayment: £%.2f", quote.getTotalRepayment()));
-        if(amount < 1000 || amount <= 15000 || amount % 100 != 0) {
-        	System.out.println(sb.toString());
+        if(amount >= 1000 && amount <= 15000 && amount % 100 != 0) {
+            System.out.println(sb.toString());
+        }else {
+             System.out.println(Permanent.AMOUNT_TOO_HIGH_OR_LOW);
         }
     }
     
