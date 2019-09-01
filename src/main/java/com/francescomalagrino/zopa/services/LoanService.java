@@ -55,7 +55,7 @@ public class LoanService {
 
     private void checkAvailableAmountExceeded(int desiredAmount) throws AvailableAmountException {
         if (availableAmount < desiredAmount) {
-        	System.out.println(Permanent.AVAILABLE_LOAN);
+        	System.out.println(Permanent.AMOUNT_TOO_HIGH_OR_LOW);
         }
     }
 
