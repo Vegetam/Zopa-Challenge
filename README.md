@@ -19,4 +19,4 @@ Here is What the app is doing with an exceed amount
 ![website image 2][]
 
 [website image]: /images/image1.png "Screenshot 1"
-[website image 2]: //images/image2.png "Screenshot 2"
+[website image 2]: /images/image2.png "Screenshot 2"
